@@ -34,24 +34,6 @@ body{
     font-size: 17px;
 }
 
-.main {
-    
-}
-.info{
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    line-height: 50px;
-    background-color: #003865;
-    border-radius: 20px;
-    color: white;
-    position: relative;
-    font-size: 26px;
-    padding: 50px;
-    top: 600px;
-    left: 50%; 
-    font-family: 'Bebas Neue', cursive;
-}
 .container {
     display: grid;
     height: 100%;
@@ -60,9 +42,9 @@ body{
 .infocontainer {
     margin: auto;
     position: relative;
-    top: 80px;
+    top: -50px;
 
-    height: 255px;
+    height: 265px;
     width: 80vw;
     display: flex;
     justify-content: space-around;
