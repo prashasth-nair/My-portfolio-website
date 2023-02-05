@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     height: 100%;
-    
+
 }
-body{
+
+body {
     background-color: #011627;
 }
 
@@ -23,6 +25,10 @@ body{
     list-style: none;
     font-size: 20px;
     padding: 33px 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .sidebar nav a {
@@ -37,6 +43,11 @@ body{
 .container {
     display: grid;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .infocontainer {
@@ -116,9 +127,9 @@ body{
 }
 
 .middle {
-    position:fixed;
+    position: fixed;
     /* transform: translateY(-50%); */
-    text-align: center;  
+    text-align: center;
     bottom: 0;
     height: 100px;
 
@@ -180,5 +191,37 @@ body{
     100% {
         top: -10%;
         left: -10%;
+    }
+}
+
+.main .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+
+
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid cyan;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.8));
+    animation: loader 6s infinite ease-in-out;
+    z-index: -10;
+
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg) scale(5);
+    }
+
+    50% {
+        transform: rotate(720deg) scale(5);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(5);
     }
 }

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #011627;
     padding-bottom: 100px;
-    overflow: hidden; 
+    overflow: hidden;
 }
+
 .sidebar {
     font-family: 'Quicksand', sans-serif;
     backdrop-filter: blur(8px);
@@ -20,6 +22,11 @@ body {
     list-style: none;
     font-size: 20px;
     padding: 33px 0;
+
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .sidebar nav a {
@@ -34,42 +41,48 @@ body {
 /*  */
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 .input-field {
-  position: relative;
+    position: relative;
 }
+
 .input-field input {
-  width: 400px;
-  height: 60px;
-  border-radius: 6px;
-  font-size: 18px;
-  padding: 0 15px;
-  margin-top: 15px;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-  outline: none;
+    width: 400px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
 }
+
 .input-field label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  color: #fff;
-  font-size: 19px;
-  pointer-events: none;
-  transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
 }
+
 input:focus {
-  border: 2px solid #ffcc00;
+    border: 2px solid #ffcc00;
 }
-input:focus ~ label,
-input:valid ~ label {
-  top: 15px;
-  left: 15px;
-  font-size: 16px;
-  padding: 0 2px;
-  background: #011627;
+
+input:focus~label,
+input:valid~label {
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: #011627;
 }
+
 .contact-wrapper textarea {
     width: 400px;
     resize: none;
@@ -83,19 +96,22 @@ input:valid ~ label {
     border-radius: 5px;
     max-height: 330px;
     border: 2px solid #fff;
-    
-  }
-  textarea::placeholder {
+
+}
+
+textarea::placeholder {
     color: #fff;
-  }
-  textarea:is(:focus, :valid) {
+}
+
+textarea:is(:focus, :valid) {
     padding: 14px;
     border: 2px solid #ffcc00;
-  }
-  textarea::-webkit-scrollbar {
+}
+
+textarea::-webkit-scrollbar {
     width: 0px;
-  }
-  
+}
+
 /*  */
 #contact {
     width: 100%;
@@ -161,9 +177,11 @@ textarea {
     text-align: center;
     transition: all .2s ease-in-out;
 }
-#paper-plane{
+
+#paper-plane {
     margin-top: 7px;
 }
+
 .send-text {
     display: block;
     margin-top: 15px;
