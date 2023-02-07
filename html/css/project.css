@@ -40,6 +40,8 @@ body {
 
 .project_details {
     padding: 50px;
+    animation: fadeIn 2s forwards;
+    animation-play-state: paused;
 }
 
 #project_head {
@@ -58,7 +60,8 @@ body {
 .project_card {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 
 }
 
@@ -73,13 +76,14 @@ body {
 
     opacity: 0;
     transform: translateY(100%);
-    animation: fadeIn 1s forwards;
+    animation: fadeUp 1s forwards;
     animation-play-state: paused;
 }
 
 .project_title {
     font-size: 36px;
     color: aliceblue;
+    
 }
 
 .project_disc {
@@ -90,6 +94,7 @@ body {
     font-size: 18px;
     background-color: #172a45;
     border-radius: 10px;
+
 }
 
 .project_langs ul li {
@@ -137,8 +142,33 @@ body {
     padding-right: 16px;
     padding-bottom: 16px;
 }
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track { */
+    /* box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px; */
+  /* } */
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #050b11; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #172a45; 
+  }
 
-@keyframes fadeIn {
+
+/* animation */
+@keyframes fadeUp {
     0% {
         opacity: 0;
         transform: translateY(100%);
@@ -149,3 +179,7 @@ body {
         transform: translateY(0);
     }
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

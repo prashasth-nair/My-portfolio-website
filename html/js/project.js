@@ -1,4 +1,5 @@
 const elements = document.querySelectorAll('.project_img');
+const project_details_elements = document.querySelectorAll('.project_details');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -11,4 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 
 elements.forEach((element) => {
   observer.observe(element);
+});
+project_details_elements.forEach((project_details_element) => {
+  observer.observe(project_details_element);
 });

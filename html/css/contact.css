@@ -71,7 +71,7 @@ body {
 }
 
 input:focus {
-    border: 2px solid #ffcc00;
+    border: 2px solid #ff6347;
 }
 
 input:focus~label,
@@ -105,7 +105,7 @@ textarea::placeholder {
 
 textarea:is(:focus, :valid) {
     padding: 14px;
-    border: 2px solid #ffcc00;
+    border: 2px solid #ff6347;
 }
 
 textarea::-webkit-scrollbar {
@@ -123,7 +123,7 @@ textarea::-webkit-scrollbar {
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
+    font: 300 50px 'Oswald', sans-serif;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
