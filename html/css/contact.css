@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
 
+*:focus {
+    outline: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -138,9 +141,9 @@ textarea::-webkit-scrollbar {
     max-width: 1000px;
 
     /* width: 470px; */
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 25px 25px 30px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Left contact page */
@@ -241,7 +244,7 @@ textarea {
 
 
 /* Social Media Icons */
-.social-media-list {
+.social-menu {
     position: relative;
     font-size: 22px;
     text-align: center;
@@ -250,11 +253,11 @@ textarea {
     padding: 0;
 }
 
-.social-media-list li a {
+.social-menu li a {
     color: #fff;
 }
 
-.social-media-list li {
+.social-menu li {
     position: relative;
     display: inline-block;
     height: 60px;
@@ -268,8 +271,8 @@ textarea {
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
-    content: '';
+.social-menu li:after {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -277,22 +280,20 @@ textarea {
     height: 60px;
     line-height: 60px;
     border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:hover {
+.social-menu li:hover {
     background-color: #fff;
 }
 
-.social-media-list li:hover:after {
+.social-menu li:hover:after {
     opacity: 1;
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
-.social-media-list li:hover a {
+.social-menu li:hover a {
     color: #011627;
 }
 
@@ -324,13 +325,13 @@ hr {
         max-width: 300px;
     }
 
-    .social-media-list li {
+    .social-menu li {
         height: 60px;
         width: 60px;
         line-height: 60px;
     }
 
-    .social-media-list li:after {
+    .social-menu li:after {
         width: 60px;
         height: 60px;
         line-height: 60px;
@@ -363,18 +364,18 @@ hr {
         max-width: 280px;
     }
 
-    .social-media-list {
+    .social-menu {
         left: 0;
     }
 
-    .social-media-list li {
+    .social-menu li {
         height: 55px;
         width: 55px;
         line-height: 55px;
         font-size: 2rem;
     }
 
-    .social-media-list li:after {
+    .social-menu li:after {
         width: 55px;
         height: 55px;
         line-height: 55px;

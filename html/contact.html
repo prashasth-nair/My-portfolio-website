@@ -35,7 +35,8 @@
                             <!-- Left contact page -->
 
                             <form id="contact-form" class="form-horizontal"
-                                role="form">
+                                role="form" onsubmit="sendEmail(); reset();
+                                return false">
 
                                 <div class="input-field">
                                     <div class="col-sm-12">
@@ -55,7 +56,8 @@
                                     </div>
                                 </div>
 
-                                <textarea class="form-control" rows="10"
+                                <textarea class="form-control" id="message"
+                                    rows="10"
                                     placeholder="MESSAGE" name="message"
                                     maxlength="400"
                                     required></textarea>
@@ -94,51 +96,44 @@
                                             </ul>
 
                                             <hr>
-                                            <ul class="social-media-list">
+
+                                            <ul class="social-menu">
                                                 <li><a
                                                         href="https://github.com/prashasth-nair"
-                                                        target="_blank"
-                                                        class="contact-icon">
-                                                        <i class="fab
-                                                            fa-github"></i></a>
-                                                </li>
-                                                <li><a
-                                                        href="https://www.linkedin.com/in/prashasth-nair-277a66194"
-                                                        target="_blank"
-                                                        class="contact-icon">
-                                                        <i class="fab
-                                                            fa-linkedin-in"></i></a>
-                                                </li>
-                                                <li><a
-                                                        href="https://twitter.com/Prashasth_nair"
-                                                        target="_blank"
-                                                        class="contact-icon">
-                                                        <i class="fab
-                                                            fa-twitter"></i></a>
-                                                </li>
-                                                <li><a
-                                                        href="https://www.instagram.com/prashasth__nair"
-                                                        target="_blank"
-                                                        class="contact-icon">
-                                                        <i class="fab
-                                                            fa-instagram"></i></a>
-                                                </li>
-                                            </ul>
-                                            <hr>
+                                                        target="blank"><i
+                                                            class="fab
+                                                            fa-github"></i></i></a></li>
+                                            <li><a
+                                                    href="https://www.instagram.com/prashasth__nair"
+                                                    target="blank"><i class="fab
+                                                        fa-instagram"></i></a></li>
+                                            <li><a
+                                                    href="https://www.linkedin.com/in/prashasth-nair-277a66194"
+                                                    target="blank"><i class="fab
+                                                        fa-linkedin-in"></i></a></li>
+                                            <li><a
+                                                    href="https://www.facebook.com/prashasthnair"
+                                                    target="_blank">
+                                                    <i class="fab
+                                                        fa-facebook-f"></i></a></li>
+                                        </ul>
 
-                                            <div class="copyright">&copy; ALL OF
-                                                THE RIGHTS
-                                                RESERVED</div>
+                                        <hr>
 
-                                        </div>
+                                        <div class="copyright">&copy; ALL OF
+                                            THE RIGHTS
+                                            RESERVED</div>
 
                                     </div>
 
-                                </section>
+                                </div>
 
-                            </div>
+                            </section>
 
                         </div>
-                        <script src="js/contact.js"></script>
-                    </body>
-                </html>
+
+                    </div>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script src="js/contact.js"></script>
+                </body>
+            </html>
