@@ -1,11 +1,4 @@
-document.querySelector('#scroll-button').addEventListener('click', function() {
-    document.querySelector('.Github_stats').scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest'
-    });
-  });
-  document.querySelector(".menu-toggle").addEventListener("click",toggleMenu);
+document.querySelector(".menu-toggle").addEventListener("click",toggleMenu);
 
 var menuVisible = false;
 var menu = document.querySelector('.menu');
