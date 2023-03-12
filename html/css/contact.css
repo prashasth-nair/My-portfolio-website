@@ -5,113 +5,69 @@
 *:focus {
     outline: none;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #011627;
     padding-bottom: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
 .sidebar {
     font-family: 'Quicksand', sans-serif;
     /* backdrop-filter: blur(8px); */
     height: 20vh;
-  }
-  
-  .sidebar nav {
+}
+
+.sidebar nav {
     background-color: transparent;
     overflow: hidden;
     list-style: none;
-  
+
     padding: 2vw 0;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
-  }
-  
-  .sidebar nav a {
+}
+
+.sidebar nav a {
     float: left;
     color: white;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .menu {
+}
+
+.menu {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     margin-left: 20px;
-  }
-  
-  .menu li a {
+}
+
+.menu li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
-  }
-  
-  .menu-toggle {
+}
+
+.menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 1.5em;
     color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 70%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #34495Ed9;
-      backdrop-filter: blur(10px);
-      /* adjust the blur radius as needed */
-      -webkit-backdrop-filter: blur(10px);
-      /* for Safari */
-      /* padding: 10px; */
-      z-index: 9999;
-      overflow: hidden;
-  
-    }
-  
-    .menu li {
-      margin: 10px 0;
-      padding: 10px;
-      width: 100%;
-    }
-  
-    .menu li a {
-      width: 100%;
-    }
-  
-    .menu li:hover {
-      cursor: pointer;
-    }
-  
-    .menu li a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-  
-    .menu-toggle {
-      display: block;
-      position: relative;
-      z-index: 9999;
-      cursor: pointer;
-    }
-  }
+}
+
+
 /*  */
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -343,7 +299,7 @@ textarea {
 }
 
 .social-menu li:after {
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -380,6 +336,7 @@ hr {
 }
 
 /* Begin Media Queries*/
+
 @media screen and (max-width: 850px) {
     .contact-wrapper {
         display: flex;
@@ -406,6 +363,60 @@ hr {
         width: 60px;
         height: 60px;
         line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #34495Ed9;
+        backdrop-filter: blur(10px);
+        /* adjust the blur radius as needed */
+        -webkit-backdrop-filter: blur(10px);
+        /* for Safari */
+        /* padding: 10px; */
+        z-index: 9999;
+        overflow: hidden;
+
+    }
+
+    .menu li {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .menu li a {
+        width: 100%;
+    }
+
+    .menu li:hover {
+        cursor: pointer;
+    }
+
+    .menu li a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .contact-form {
+        display: flex;
+        width: 100%;
+        justify-items: center;
     }
 }
 
