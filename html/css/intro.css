@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
 *:focus {
   outline: none;
@@ -10,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #011627;
+  scroll-behavior: smooth;
   /* padding-bottom: 100px; */
 }
 
@@ -114,7 +119,7 @@ body {
   }
 }
 
-.About_me {
+.Section_info {
   height: 100vh;
   /* This sets the height of the element to the full height of the viewport */
 }
@@ -136,11 +141,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-
+  font-family: 'PT Sans Narrow', sans-serif;
   background-color: #172a45;
   border-radius: 20px;
-  padding: 2vw;
-  top: 80px;
+  padding: 1vw;
+  top: 70px;
   height: auto;
   text-shadow: #000;
 
@@ -201,9 +206,53 @@ body {
   left: -10%;
 }
 
+.Skills{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 400px;
+  justify-content: center;
+}
+.card {
+  width: 354px;
+  height: 354px;
+  background: linear-gradient(344deg, rgb(31, 31, 62) 0%, #000e18 50%);
+  box-shadow: 4px 6px 14px #000000;
+  border-radius: 20px;
+  margin:  10px;
+  color: #F9F9F9;
+  padding: 16px;
+  transition: all .3s;
+ }
+ 
+ .card:hover {
+  margin-top: -30px;
+ }
+
+
+
+
+.card h2 {
+   margin-top: 0px;
+   font-size: 40px;
+   font-family: 'Rubik Iso', cursive;
+
+}
+
+.card li {
+  margin-bottom: 0px;
+  text-align: start;
+  font-size: 20px;
+  padding: 5px;
+  align-items: start;
+  justify-content: start;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+} 
+
 .stats {
   display: flex;
-  justify-content: center;
+  justify-content:end;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 80%;
@@ -294,7 +343,7 @@ body {
 }
 
 .header {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 86px;
   color: white;
   text-shadow: 5px 5px 0 #000;
@@ -303,11 +352,11 @@ body {
   position: relative;
 }
 
-.About_me a {
+.Section_info a {
   padding-top: 60px;
 }
 
-.About_me a span {
+.Section_info a span {
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -319,7 +368,7 @@ body {
   box-sizing: border-box;
 }
 
-.About_me a span::after {
+.Section_info a span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,7 +383,7 @@ body {
   box-sizing: border-box;
 }
 
-.About_me a span::before {
+.Section_info a span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -407,11 +456,19 @@ body {
     position: relative;
     top: 30vh;
   }
+  .Skills{
+    display: flex;
+    margin-left: 0px auto;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1085px) {
 
-  .About_me a {
+  .Section_info a {
     display: none;
+  }
+  .Skills{
+    margin-left: 200px;
   }
 }
