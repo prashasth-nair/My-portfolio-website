@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *:focus {
   outline: none;
@@ -217,7 +219,7 @@ body {
 .card {
   width: 354px;
   height: 354px;
-  background: linear-gradient(344deg, rgb(31, 31, 62) 0%, #000e18 50%);
+  background: linear-gradient(344deg, rgb(36, 80, 150) 0%, #001f30 50%);
   box-shadow: 4px 6px 14px #000000;
   border-radius: 20px;
   margin:  10px;
@@ -236,7 +238,7 @@ body {
 .card h2 {
    margin-top: 0px;
    font-size: 40px;
-   font-family: 'Rubik Iso', cursive;
+   font-family: 'Bebas Neue', cursive;
 
 }
 
@@ -247,7 +249,7 @@ body {
   padding: 5px;
   align-items: start;
   justify-content: start;
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Varela Round', sans-serif;
 } 
 
 .stats {
@@ -296,7 +298,9 @@ body {
 .box {
   position: fixed;
   top: 0;
-  transform: rotate(80deg);
+  width: 30%;
+  transform: rotate(100deg);
+  filter: blur(50px);
   left: 0;
 }
 
@@ -306,16 +310,15 @@ body {
   left: 0;
   opacity: .4;
   position: absolute;
-  top: 3%;
-  left: 10%;
+
   background: #0af;
   width: 1500px;
   height: 1300px;
-  margin-left: -150px;
+  margin-left: 100px;
   margin-top: -250px;
   transform-origin: 50% 48%;
-  border-radius: 43%;
-  animation: drift 7000ms infinite linear;
+  border-radius: 50%;
+  animation: drift 6000ms infinite linear;
 }
 
 .wave.-three {
@@ -348,7 +351,7 @@ body {
   color: white;
   text-shadow: 5px 5px 0 #000;
   padding: 20px;
-  z-index: -1;
+  z-index: 10;
   position: relative;
 }
 

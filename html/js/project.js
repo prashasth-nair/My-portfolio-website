@@ -39,3 +39,13 @@ window.addEventListener('resize', function() {
     menuVisible = false;
   }
 });
+
+const blob = document.getElementById("blob");
+// Todo: Added mouse move background effect
+document.body.onpointermove = event => {
+
+  const {clientX, clientY} = event;
+
+  blob.style.left = clientX+'px';
+  blob.style.top = clientY+'px';
+}

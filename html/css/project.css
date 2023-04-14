@@ -10,6 +10,22 @@ body {
     background-color: #011627;
     padding-bottom: 100px;
 }
+#blob{
+  background-color: wheat;
+  height:300px;
+  width: 500px;
+
+  aspect-ratio: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  z-index: -100;
+  background: linear-gradient(to right,rgb(2, 178, 119),rgb(85, 0, 255));
+  animation: rotate 20s infinite;
+  filter: blur(100px);
+}
 
 .sidebar {
     font-family: 'Quicksand', sans-serif;
@@ -243,6 +259,17 @@ body {
 
 
 /* animation */
+@keyframes rotate {
+  from{
+    rotate: 0deg;
+  }
+  50%{
+    scale: 1 2;
+  }
+  to{
+    rotate: 360deg;
+  }
+}
 @keyframes fadeUp {
     0% {
         opacity: 0;

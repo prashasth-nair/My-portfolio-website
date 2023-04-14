@@ -335,6 +335,19 @@ textarea {
 hr {
     border-color: rgba(255, 255, 255, .6);
 }
+.support{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.support h3{
+    color: white;
+    font: 20px 'Oswald', sans-serif;
+}
+.support iframe{
+    margin-top: 15px;
+    margin-left: 20px;
+}
 
 /* Begin Media Queries*/
 
