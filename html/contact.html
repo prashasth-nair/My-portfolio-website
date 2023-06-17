@@ -1,148 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!-- <link rel="stylesheet" href="styles.css"> -->
-        <link rel="stylesheet" href="css\contact.css">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="css\contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="/index.html" class="logo-link">
+                <img src="Photos\pn-cutout.png" alt="Logo" class="logo-image" />
+              </a>
+            </li>
+            <div class="links">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="into.html"> intro</a></li>
+              <li><a href="project.html">Projects</a></li>
 
-        <div class="container">
-            <div class="sidebar">
-
-                <nav>
-                    <div class="menu-toggle">
-                        <i class="fa fa-bars"></i>
-
-                    </div>
-                    <ul class="menu">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="into.html"> intro</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+              <li><a href="contact.html">Contact</a></li>
             </div>
-            <div class="main">
-                <div class="contactform">
-                    <section id="contact">
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="contactform">
+          <section id="contact">
+            <h1 class="section-header">Contact</h1>
 
-                        <h1 class="section-header">Contact</h1>
+            <div class="contact-wrapper">
+              <!-- Left contact page -->
 
-                        <div class="contact-wrapper">
+              <form
+                id="contact-form"
+                class="form-horizontal"
+                role="form"
+                onsubmit="sendEmail(); reset();
+                                return false"
+              >
+                <div class="input-field">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      value=""
+                      required
+                    />
+                    <label>NAME</label>
+                  </div>
+                </div>
 
-                            <!-- Left contact page -->
+                <div class="input-field">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      value=""
+                      required
+                    />
+                    <label>EMAIL</label>
+                  </div>
+                </div>
 
-                            <form id="contact-form" class="form-horizontal"
-                                role="form" onsubmit="sendEmail(); reset();
-                                return false">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="10"
+                  placeholder="MESSAGE"
+                  name="message"
+                  maxlength="400"
+                  required
+                ></textarea>
 
-                                <div class="input-field">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control"
-                                            id="name" name="name" value=""
-                                            required>
-                                        <label>NAME</label>
-                                    </div>
-                                </div>
+                <button
+                  class="send-button"
+                  id="submit"
+                  type="submit"
+                  value="SEND"
+                >
+                  <div class="alt-send-button">
+                    <i class="fa fa-paper-plane" id="paper-plane"></i
+                    ><span class="send-text">SEND </span>
+                  </div>
+                </button>
+              </form>
 
-                                <div class="input-field">
-                                    <div class="col-sm-12">
-                                        <input type="email" class="form-control"
-                                            id="email" name="email" value=""
-                                            required>
-                                        <label>EMAIL</label>
-                                    </div>
-                                </div>
+              <!-- Left contact page -->
 
-                                <textarea class="form-control" id="message"
-                                    rows="10"
-                                    placeholder="MESSAGE" name="message"
-                                    maxlength="400"
-                                    required></textarea>
+              <div class="direct-contact-container">
+                <ul class="contact-list">
+                  <li class="list-item">
+                    <i class="fa fa-map-marker fa-2x"
+                      ><span class="contact-text place">Bangalore, India</span>
+                    </i>
+                  </li>
 
-                                <button class="send-button"
-                                    id="submit" type="submit" value="SEND">
-                                    <div class="alt-send-button">
-                                        <i class="fa fa-paper-plane"
-                                            id="paper-plane"></i><span
-                                            class="send-text">SEND
-                                        </div>
+                  <li class="list-item">
+                    <i class="fa fa-envelope fa-2x"
+                      ><span class="contact-text gmail"
+                        ><a
+                          href="mailto:prashasthnair@gmail.com"
+                          title="Send me an email "
+                          >prashasthnair@gmail.com</a
+                        >
+                      </span></i
+                    >
+                  </li>
+                </ul>
 
-                                    </button>
+                <hr />
 
-                                </form>
+                <ul class="social-menu">
+                  <li>
+                    <a href="https://github.com/prashasth-nair" target="blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/prashasth__nair"
+                      target="blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/prashasth-nair-277a66194"
+                      target="blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/prashasthnair"
+                      target="_blank"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                </ul>
 
-                                <!-- Left contact page -->
-
-                                <div class="direct-contact-container">
-
-                                    <ul class="contact-list">
-                                        <li class="list-item"><i class="fa
-                                                fa-map-marker fa-2x"><span
-                                                    class="contact-text place">Bangalore,
-                                                    India </i></li>
-
-
-                                            <li class="list-item"><i class="fa
-                                                    fa-envelope fa-2x"><span
-                                                        class="contact-text
-                                                        gmail"><a
-                                                            href="mailto:prashasthnair@gmail.com"
-                                                            title="Send me an
-                                                            email">prashasthnair@gmail.com</a>
-                                                    </i></li>
-                                            </ul>
-
-                                            
-                                            <hr>
-                                            
-                                            <ul class="social-menu">
-                                                <li><a
-                                                        href="https://github.com/prashasth-nair"
-                                                        target="blank"><i
-                                                            class="fab
-                                                            fa-github"></i></i></a></li>
-                                            <li><a
-                                                    href="https://www.instagram.com/prashasth__nair"
-                                                    target="blank"><i class="fab
-                                                        fa-instagram"></i></a></li>
-                                            <li><a
-                                                    href="https://www.linkedin.com/in/prashasth-nair-277a66194"
-                                                    target="blank"><i class="fab
-                                                        fa-linkedin-in"></i></a></li>
-                                                        <li><a
-                                                    href="https://www.facebook.com/prashasthnair"
-                                                    target="_blank">
-                                                    <i class="fab
-                                                    fa-facebook-f"></i></a></li>
-                                                </ul>
-                                                
-                                            <hr>
-                                            <div class="support">
-                                                <h3>Support Me: </h3>
-                                                <iframe src="https://github.com/sponsors/prashasth-nair/button" title="Sponsor prashasth-nair" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-                                            </div>
-                                            <!-- <div class="copyright">&copy; ALL OF
-                                                THE RIGHTS
-                                            RESERVED</div> -->
-
-                                    </div>
-
-                                </div>
-
-                            </section>
-
-                        </div>
-
-                    </div>
-                    <script src="https://smtpjs.com/v3/smtp.js"></script>
-                    <script src="js/contact.js"></script>
-                </body>
-            </html>
+                <hr />
+                <div class="support">
+                  <h3>Support Me:</h3>
+                  <iframe
+                    src="https://github.com/sponsors/prashasth-nair/button"
+                    title="Sponsor prashasth-nair"
+                    height="32"
+                    width="114"
+                    style="border: 0; border-radius: 6px"
+                  ></iframe>
+                </div>
+                <dialog id="dialog-box">
+                  <div class="success-message">Email Sent!</div>
+                  <p id="success-content">
+                    Your email has been successfully sent.
+                  </p>
+                  <button id="ok-button">OK</button>
+                </dialog>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="js/contact.js"></script>
+    </div>
+  </body>
+</html>
