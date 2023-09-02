@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prashasth Nair</title>
-    <link rel="icon" href="Photos/pn-cutout.png" type="image/x-icon" sizes="4">
-    <link rel="stylesheet" href="css\intro.css" />
+    <link
+      rel="icon"
+      href="Photos/pn-cutout.png"
+      type="image/x-icon"
+      sizes="4"
+    />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/home/nav_bar.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -15,25 +21,24 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <nav>
-          <div class="menu-toggle">
-            <i class="fa fa-bars"></i>
-          </div>
-          <ul class="menu">
-            <li>
-              <a href="./" class="logo-link">
+        <header class="header">
+          <nav>
+            <div class="logo">
+              <a href="./index.html" class="logo-link">
                 <img src="Photos\pn-cutout.png" alt="Logo" class="logo-image" />
               </a>
-            </li>
-            <div class="links">
-              <li><a href="./">Home</a></li>
+            </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
               <li><a href="./into"> intro</a></li>
               <li><a href="./project">Projects</a></li>
-          
+
               <li><a href="./contact">Contact</a></li>
-            </div>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        </header>
       </div>
       <div class="box">
         <div class="wave -one"></div>
@@ -42,23 +47,17 @@
       </div>
       <section class="Section_info">
         <div class="info_container">
-          <h1 class="header">About Me</h1>
+          <h1 class="heading">About Me</h1>
           <div class="intro_main" id="intro_div">
             <p id="my_intro">
-              I am a passionate developer, ethical hacker, and skilled gamer
-              with a relentless drive to learn and innovate. My love for
-              technology and its boundless potential fuels my desire to
-              continually improve my knowledge and abilities. As a dedicated
-              student of the craft, I am constantly honing my skills at every
-              opportunity.
-            </p>
-            <p>
-              Whether it's exploring new coding languages, testing the latest
-              security measures, or diving deep into the virtual worlds of
-              gaming, I am always seeking to push my limits and expand my
-              horizons. With a keen eye for detail and a talent for
-              problem-solving, I am committed to delivering top-quality work in
-              every project I undertake.
+              I'm a passionate developer, ethical hacker, and avid gamer, driven
+              by a thirst for learning and innovation. Technology's limitless
+              possibilities inspire me to continually enhance my skills. As a
+              dedicated student, I constantly refine my abilities, exploring new
+              coding languages, testing security measures, and immersing myself
+              in gaming worlds. With an eye for detail and problem-solving
+              talent, I'm committed to delivering top-quality work in every
+              project.
             </p>
           </div>
 
@@ -66,7 +65,7 @@
         </div>
       </section>
       <section class="Section_info" id="sec_info">
-        <h1 class="header">My Skills</h1>
+        <h1 class="heading">My Skills</h1>
         <div class="Skills">
           <div class="card">
             <h2>Languages</h2>
@@ -88,7 +87,7 @@
       </section>
       <section class="Section_info">
         <div class="Github_stats">
-          <h1 class="header">Github Stats</h1>
+          <h1 class="heading">Github Stats</h1>
 
           <div class="stats">
             <p>
@@ -105,8 +104,8 @@
             </p>
             <p>
               <img
-                src="https://github-readme-stats.vercel.app/api/wakatime?username=@prashasth&show_icons=true&theme=transparent&v=2"
-                alt="Prashasth&#39;s wakatime stats"
+                src="https://github-readme-stats.vercel.app/api/wakatime?username=prashasth&show_icons=true&theme=transparent&v=2&langs_count=7&custom_title=Time spend in coding:"
+                alt="Prashasth's wakatime stats"
               />
             </p>
           </div>

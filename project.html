@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prashasth Nair</title>
     <link rel="icon" href="Photos/pn-cutout.png" type="image/x-icon" sizes="4">
-    <link rel="stylesheet" href="css\project.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/home/nav_bar.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -16,29 +17,26 @@
     <div id="blob"></div>
     <div class="container">
       <div class="sidebar">
-        <nav>
-          <div class="menu-toggle">
-            <i class="fa fa-bars"></i>
-          </div>
-          <ul class="menu">
-            <li>
+
+        <header class="header">
+          <nav>
+            <div class="logo">
               <a href="./" class="logo-link">
-                <img
-                  src="Photos\pn-cutout.png"
-                  alt="Logo"
-                  class="logo-image"
-                />
+                <img src="Photos\pn-cutout.png" alt="Logo" class="logo-image"/>
               </a>
-            </li>
-            <div class="links">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
               <li><a href="./">Home</a></li>
               <li><a href="./into"> intro</a></li>
               <li><a href="./project">Projects</a></li>
           
               <li><a href="./contact">Contact</a></li>
-            </div>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        </header>
+
       </div>
       <h3 id="project_head">Some Things I've Built</h3>
       <!-- Project cards -->
