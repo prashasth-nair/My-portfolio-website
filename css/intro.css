@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 *:focus {
   outline: none;
@@ -16,6 +17,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #011627;
+  
+  min-height: 160vh;
+}
+html{
   scroll-behavior: smooth;
 }
 
@@ -23,7 +28,7 @@ body {
 
 .Section_info {
   height: 100vh;
-  margin-top: 100px;
+
   /* This sets the height of the element to the full height of the viewport */
 }
 
@@ -110,7 +115,10 @@ body {
   left: -10%;
 }
 
-.Skills{
+.Skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -118,43 +126,55 @@ body {
   margin-left: 400px;
   justify-content: center;
 }
-.card {
-  width: 354px;
-  height: 354px;
-  background: linear-gradient(344deg, rgb(36, 80, 150) 0%, #001f30 50%);
-  box-shadow: 4px 6px 14px #000000;
-  border-radius: 20px;
-  margin:  10px;
-  color: #F9F9F9;
-  padding: 16px;
-  transition: all .3s;
- }
- 
- .card:hover {
-  margin-top: -30px;
- }
 
-.card h2 {
-   margin-top: 0px;
-   font-size: 40px;
-   font-family: 'Bebas Neue', cursive;
+.card {
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(344deg, rgb(26, 58, 109) 0%, #001f30 50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+  border: 2px solid #172a45;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:  0px 10px 140px rgba(5, 96, 142, 0.612);
 
 }
 
+.card h2 {
+  font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
 .card li {
-  margin-bottom: 0px;
-  text-align: start;
   font-size: 20px;
-  padding: 5px;
-  align-items: start;
-  justify-content: start;
-  font-family: 'Varela Round', sans-serif;
-} 
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.card li i {
+  margin-right: 10px;
+  font-size: 24px;
+}
 
 .stats {
   display: flex;
   justify-content:end;
   flex-wrap: wrap;
+  align-items: end;
+ 
   margin: 0 auto;
   width: 80%;
 }

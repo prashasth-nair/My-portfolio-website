@@ -10,6 +10,7 @@
   *:focus {
     outline: none;
   }
+  
 .logo-image {
     max-width: 60px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
