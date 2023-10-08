@@ -1,4 +1,4 @@
-# Prashasth Nair's Portfolio Website
+# My Portfolio Website
 
 Welcome to my portfolio website's GitHub repository. This repository contains the source code and assets for my personal portfolio website.
 
@@ -17,10 +17,6 @@ In the "Projects" section of my portfolio website, you can find details about th
 ## Contact
 
 If you would like to get in touch with me, you can find my contact information in the "Contact" section of my portfolio website. Whether you want to discuss potential collaborations, ask questions about my projects, or just have a friendly chat, I'm always open to connecting with fellow enthusiasts.
-
-## Contributions
-
-I welcome contributions, feedback, and suggestions for improving my portfolio website. If you notice any issues or have ideas to enhance the user experience, feel free to submit a pull request or open an issue in this repository.
 
 Thank you for visiting my portfolio website's GitHub repository!
 
