@@ -24,6 +24,10 @@
     display: flex;
     justify-content: center;
   }
+  .fa-github{
+    color: white;
+    font-size: 25px;
+  }
   
   .header {
     position: fixed;
