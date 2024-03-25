@@ -4,21 +4,20 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+@import url('/css/universal.css');
+
+
 *:focus {
   outline: none;
 }
 
 body {
-  margin-top:  100px;
-  padding: 0;
-  background-color: #011627;
+  margin-top: 100px;
+  background-color: var(--background);
   padding-bottom: 100px;
-  /* overflow: hidden; */
 }
 
-
 /*  */
-
 
 .input-field {
   position: relative;
@@ -31,25 +30,25 @@ body {
   font-size: 18px;
   padding: 0 15px;
   margin-top: 15px;
-  border: 2px solid #fff;
+  border: 2px solid var(--primary);
   background: transparent;
-  color: #fff;
+  color: var(--text);
   outline: none;
 }
 
 .input-field label {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 15px;
   transform: translateY(-50%);
-  color: #fff;
+  color:var(--text);
   font-size: 19px;
   pointer-events: none;
   transition: 0.3s;
 }
 
 input:focus {
-  border: 2px solid #ff6347;
+  border: 2px solid var(--accent);
 }
 
 input:focus ~ label,
@@ -58,10 +57,8 @@ input:valid ~ label {
   left: 15px;
   font-size: 16px;
   padding: 0 2px;
-  background: #011627;
+  background: var(--background);
 }
-
-
 
 .contact-wrapper textarea {
   width: 435px;
@@ -71,20 +68,20 @@ input:valid ~ label {
   padding: 15px;
   font-size: 16px;
   background: none;
-  color: white;
+  color: var(--text);
   margin-top: 20px;
   border-radius: 5px;
   max-height: 330px;
-  border: 2px solid #fff;
+  border: 2px solid var(--accent);
 }
 
 textarea::placeholder {
-  color: #fff;
+  color: var(--text);
 }
 
 textarea:is(:focus, :valid) {
   padding: 14px;
-  border: 2px solid #ff6347;
+  border: 2px solid var(--accent);
 }
 
 textarea::-webkit-scrollbar {
@@ -102,7 +99,7 @@ textarea::-webkit-scrollbar {
   margin: 0 auto;
   padding: 40px 0;
   font: 300 50px "Oswald", sans-serif;
-  color: #fff;
+  color: var(--text);
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -168,13 +165,16 @@ textarea::-webkit-scrollbar {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
-}
 
+  color: var(--text);
+}
+.list-icons {
+  padding-left: 30px;
+}
 .contact-text {
   font: 300 18px "Lato", sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
+  letter-spacing: 1.4px;
+  color: var(--text);
 }
 
 .place {
@@ -190,13 +190,13 @@ textarea::-webkit-scrollbar {
 }
 
 .contact-text a {
-  color: #bbb;
+  color: var(--text);
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li a {
-  color: #fff;
+  color: var(--text);
 }
 
 .social-menu li {
@@ -222,8 +222,8 @@ textarea::-webkit-scrollbar {
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
-  color: #fff;
-  background-color: #012b4d;
+  color: var(--text);
+  background-color: var(--primary);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -240,7 +240,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li:hover {
-  background-color: #fff;
+  background-color: var(--text);
 }
 
 .social-menu li:hover:after {
@@ -250,14 +250,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li:hover a {
-  color: #011627;
-}
-
-.copyright {
-  font: 200 14px "Oswald", sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
+  color: var(--accent);
 }
 
 hr {
@@ -269,7 +262,7 @@ hr {
   justify-content: start;
 }
 .support h3 {
-  color: white;
+  color: var(--text);
   font: 20px "Oswald", sans-serif;
 }
 .support iframe {
@@ -280,8 +273,8 @@ hr {
 #dialog-box {
   width: 300px;
   padding: 20px;
-  background-color: #0c0b0b;
-  border: 1px solid #0015ff;
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
   border-radius: 5px;
   text-align: center;
   margin: 100px auto;
@@ -290,27 +283,26 @@ hr {
 
 /* CSS for the success message */
 .success-message {
-  color: #4caf50;
+  color: var(--success);
   font-size: 18px;
   margin-bottom: 10px;
-  
 }
 
-#success-content{
-    color: white;
+#success-content {
+  color: var(--text);
 }
 
 /* CSS for the OK button */
 #ok-button {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text);
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.support h3{
+.support h3 {
   margin-top: 20px;
 }
 
@@ -320,6 +312,9 @@ hr {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 20vw;
+    width: 100%;
   }
 
   .direct-contact-container,
@@ -328,8 +323,9 @@ hr {
   }
 
   .direct-contact-container {
-    margin-top: 60px;
+    margin-top: 100px;
     max-width: 300px;
+    margin-left: 0px;
   }
 
   .social-menu li {
@@ -346,7 +342,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-
   .contact-form {
     display: flex;
     width: 100%;
@@ -361,21 +356,31 @@ hr {
     margin: 0 auto;
   }
 
-  /* .form-control,
-    textarea {
-
-        margin: 0 auto;
-    } */
-
-  .name,
-  .email,
-  textarea {
-    width: 280px;
+  .input-field input {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .input-field label {
+    font-size: 17px;
+    top: 60%;
   }
 
   .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
+    margin-top: 100px;
+    max-width: 300px;
+    margin-left: 0px;
+  }
+
+  .contact-wrapper textarea {
+    width: 300px;
+  }
+
+  .send-button {
+    width: 300px;
+  }
+  .alt-send-button {
+    width: 300px;
   }
 
   .social-menu {
@@ -393,11 +398,5 @@ hr {
     width: 55px;
     height: 55px;
     line-height: 55px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
   }
 }

@@ -11,8 +11,9 @@
       type="image/x-icon"
       sizes="4"
     />
-    <link rel="stylesheet" href="css\contact.css" />
     <link rel="stylesheet" href="css/home/nav_bar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    
 
     <link
       rel="stylesheet"
@@ -21,22 +22,24 @@
   </head>
   <body>
     <div class="container">
+      <button onclick="toggleTheme()">Toggle Theme</button>
       <div class="sidebar">
         <header class="header">
           <nav>
             <div class="logo">
-              <a href="./" class="logo-link">
+              <a href="./index.html" class="logo-link">
                 <img src="Photos\pn-cutout.png" alt="Logo" class="logo-image" />
               </a>
             </div>
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
-              <li><a href="./">Home</a></li>
-              <li><a href="./into"> intro</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./About"> About</a></li>
               <li><a href="./project">Projects</a></li>
 
               <li><a href="./contact">Contact</a></li>
+              <li><a href="https://github.com/prashasth-nair"><i class="fab fa-github"></i></a></li>
             </ul>
           </nav>
         </header>
@@ -107,18 +110,18 @@
                 </button>
               </form>
 
-              <!-- Left contact page -->
+              <!-- Right contact page -->
 
               <div class="direct-contact-container">
                 <ul class="contact-list">
                   <li class="list-item">
-                    <i class="fa fa-map-marker fa-2x"
+                    <i class="fa fa-map-marker fa-2x list-icons"
                       ><span class="contact-text place">Bangalore, India</span>
                     </i>
                   </li>
 
                   <li class="list-item">
-                    <i class="fa fa-envelope fa-2x"
+                    <i class="fa fa-envelope fa-2x list-icons"
                       ><span class="contact-text gmail"
                         ><a
                           href="mailto:prashasthnair@gmail.com"
@@ -185,8 +188,9 @@
           </section>
         </div>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script src="js/contact.js"></script>
+      
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="js/contact.js"></script>
   </body>
 </html>

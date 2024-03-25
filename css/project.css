@@ -15,8 +15,6 @@ body {
   background-color: wheat;
   height: 300px;
   width: 500px;
-
-  aspect-ratio: 1;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -134,12 +132,6 @@ body {
   width: 10px;
   height: 5px;
 }
-
-/* Track */
-/* ::-webkit-scrollbar-track { */
-/* box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px; */
-/* } */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
