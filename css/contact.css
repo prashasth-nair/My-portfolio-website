@@ -4,8 +4,6 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-@import url('/css/universal.css');
-
 
 *:focus {
   outline: none;
@@ -13,7 +11,7 @@
 
 body {
   margin-top: 100px;
-  background-color: var(--background);
+  background-color: #050415;
   padding-bottom: 100px;
 }
 
@@ -30,9 +28,9 @@ body {
   font-size: 18px;
   padding: 0 15px;
   margin-top: 15px;
-  border: 2px solid var(--primary);
+  border: 2px solid #9590e9;
   background: transparent;
-  color: var(--text);
+  color: #e8e5fa;
   outline: none;
 }
 
@@ -41,14 +39,14 @@ body {
   top: 60%;
   left: 15px;
   transform: translateY(-50%);
-  color:var(--text);
+  color:#e8e5fa;
   font-size: 19px;
   pointer-events: none;
   transition: 0.3s;
 }
 
 input:focus {
-  border: 2px solid var(--accent);
+  border: 2px solid #de5d54;
 }
 
 input:focus ~ label,
@@ -57,7 +55,7 @@ input:valid ~ label {
   left: 15px;
   font-size: 16px;
   padding: 0 2px;
-  background: var(--background);
+  background: #050415;
 }
 
 .contact-wrapper textarea {
@@ -68,20 +66,20 @@ input:valid ~ label {
   padding: 15px;
   font-size: 16px;
   background: none;
-  color: var(--text);
+  color: #e8e5fa;
   margin-top: 20px;
   border-radius: 5px;
   max-height: 330px;
-  border: 2px solid var(--accent);
+  border: 2px solid #9590e9;
 }
 
 textarea::placeholder {
-  color: var(--text);
+  color: #e8e5fa;
 }
 
 textarea:is(:focus, :valid) {
   padding: 14px;
-  border: 2px solid var(--accent);
+  border: 2px solid #de5d54;
 }
 
 textarea::-webkit-scrollbar {
@@ -99,9 +97,9 @@ textarea::-webkit-scrollbar {
   margin: 0 auto;
   padding: 40px 0;
   font: 300 50px "Oswald", sans-serif;
-  color: var(--text);
+  color: #e8e5fa;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 .contact-wrapper {
@@ -166,7 +164,7 @@ textarea::-webkit-scrollbar {
 .list-item {
   line-height: 4;
 
-  color: var(--text);
+  color: #e8e5fa;
 }
 .list-icons {
   padding-left: 30px;
@@ -174,7 +172,7 @@ textarea::-webkit-scrollbar {
 .contact-text {
   font: 300 18px "Lato", sans-serif;
   letter-spacing: 1.4px;
-  color: var(--text);
+  color: #e8e5fa;
 }
 
 .place {
@@ -190,13 +188,13 @@ textarea::-webkit-scrollbar {
 }
 
 .contact-text a {
-  color: var(--text);
+  color: #e8e5fa;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: var(--text);
+  color: #e8e5fa;
   text-decoration: none;
 }
 
@@ -211,7 +209,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li a {
-  color: var(--text);
+  color: #e8e5fa;
 }
 
 .social-menu li {
@@ -222,8 +220,9 @@ textarea::-webkit-scrollbar {
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
-  color: var(--text);
-  background-color: var(--primary);
+  color: #e8e5fa;
+  background-color: #050415;
+  border: 2px solid #e8e5fa;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -240,7 +239,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li:hover {
-  background-color: var(--text);
+  background-color: #e8e5fa;
 }
 
 .social-menu li:hover:after {
@@ -250,7 +249,7 @@ textarea::-webkit-scrollbar {
 }
 
 .social-menu li:hover a {
-  color: var(--accent);
+  color:#de5d54;
 }
 
 hr {
@@ -262,7 +261,7 @@ hr {
   justify-content: start;
 }
 .support h3 {
-  color: var(--text);
+  color: #e8e5fa;
   font: 20px "Oswald", sans-serif;
 }
 .support iframe {
@@ -273,8 +272,8 @@ hr {
 #dialog-box {
   width: 300px;
   padding: 20px;
-  background-color: var(--primary);
-  border: 1px solid var(--secondary);
+  background-color: #9590e9;
+  border: 1px solid #81184d;
   border-radius: 5px;
   text-align: center;
   margin: 100px auto;
@@ -283,19 +282,19 @@ hr {
 
 /* CSS for the success message */
 .success-message {
-  color: var(--success);
+  color: #4caf50;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 #success-content {
-  color: var(--text);
+  color:#e8e5fa;
 }
 
 /* CSS for the OK button */
 #ok-button {
-  background-color: var(--primary);
-  color: var(--text);
+  background-color: #9590e9;
+  color: #e8e5fa;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
