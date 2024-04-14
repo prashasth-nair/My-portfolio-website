@@ -19,7 +19,9 @@ project_details_elements.forEach((project_details_element) => {
 
 
 const blob = document.getElementById("blob");
-// Todo: Added mouse move background effect
+
+blob.style.left = '80%';
+blob.style.top = '10%';
 document.body.onpointermove = event => {
 
   const {clientX, clientY} = event;

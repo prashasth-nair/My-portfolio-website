@@ -8,22 +8,19 @@ body {
   
   padding: 0;
   margin-top: 100px;
-  background-color: #011627;
+  background-color: #050415;
   padding-bottom: 100px;
 }
 #blob {
-  background-color: wheat;
-  height: 300px;
-  width: 500px;
+  height: 350px;
+  width: 300px;
   position: fixed;
-  left: 50%;
-  top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
   z-index: -100;
-  background: linear-gradient(to right, rgb(2, 178, 119), rgb(85, 0, 255));
-  animation: rotate 20s infinite;
-  filter: blur(100px);
+  background: linear-gradient(to left, #191432  , #111f7b);
+  animation: rotate 10s infinite linear;
+  filter: blur(30px);
 }
 
 .project_details {
@@ -75,11 +72,15 @@ body {
 .project_disc {
   margin-top: 20px;
   width: 500px;
-  padding: 15px;
+  height: fit-content;
+  padding: 20px;
   color: white;
+  text-anchor: middle;
   font-size: 18px;
-  background-color: #172a45;
+  box-shadow: 0 10px 50px hsla(238, 100%, 18%, 0.755);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
+  text-align:justify;
 }
 
 .project_langs ul li {
@@ -148,9 +149,6 @@ body {
 @keyframes rotate {
   from {
     rotate: 0deg;
-  }
-  50% {
-    scale: 1 2;
   }
   to {
     rotate: 360deg;
