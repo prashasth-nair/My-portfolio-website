@@ -31,8 +31,9 @@ html {
 }
 
 .Github_stats {
-  height: 100vh;
-  /* This sets the height of the element to the full height of the viewport */
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .info_container {
@@ -49,7 +50,9 @@ html {
   display: flex;
   flex-direction: column;
   font-family: "PT Sans Narrow", sans-serif;
-  background-color: #172a45;
+  background: linear-gradient(320deg, rgb(10, 20, 89) 0%, #050415 30%);
+  box-shadow: 0 4px 20px hsla(230, 60%, 30%, 0.703);
+
   border-radius: 20px;
   padding: 2vw;
   top: 20px;
@@ -64,20 +67,25 @@ html {
 }
 
 .Skills {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 10px;
-  margin-left: 350px;
   justify-content: center;
+}
+
+.Skills_container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
   width: 300px;
   height: 350px;
-  background: linear-gradient(344deg, rgb(26, 58, 109) 0%, #001f30 50%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(344deg, rgb(26, 58, 109) 0%, #050415 30%);
+  box-shadow: 0 4px 20px hsla(234, 60%, 30%, 0.736);
+
   border-radius: 10px;
   margin: 20px;
   color: #fff;
@@ -88,7 +96,7 @@ html {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 140px rgba(5, 96, 142, 0.612);
+  box-shadow: 0px 10px 140px rgba(7, 27, 153, 0.612);
 }
 
 .card h2 {
@@ -118,9 +126,9 @@ html {
   justify-content: end;
   flex-wrap: wrap;
   align-items: end;
- 
+
   margin: 0 auto;
-  width: 70vw;
+  width: 64vw;
 }
 
 .stats p {
@@ -141,7 +149,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #050b11;
+  background: #000552ae;
   border-radius: 10px;
 }
 
@@ -210,11 +218,11 @@ html {
   position: relative;
 }
 
-.Section_info a {
+#scroll-button {
   padding-top: 60px;
 }
 
-.Section_info a span {
+#scroll-button span {
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -222,11 +230,11 @@ html {
   height: 46px;
   margin-left: -23px;
   border: 1px solid #fff;
-  border-radius: 100%;
+  border-radius: 50%;
   box-sizing: border-box;
 }
 
-.Section_info a span::after {
+#scroll-button span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -241,7 +249,7 @@ html {
   box-sizing: border-box;
 }
 
-.Section_info a span::before {
+#scroll-button span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -310,7 +318,6 @@ html {
     display: none;
   }
 
-
   .Github_stats {
     position: relative;
     top: 30vh;
@@ -323,8 +330,7 @@ html {
 }
 
 @media screen and (max-width: 1085px) {
- 
-  .heading{
+  .heading {
     font-size: 8vw;
   }
   .info_container {
@@ -334,7 +340,13 @@ html {
   .Section_info a {
     display: none;
   }
-  .Skills_container{
+  .Skills_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Github_stats {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,10 +354,10 @@ html {
   .Skills {
     margin-left: 0px;
   }
- 
-.card {
-  width: 260px;
-  height: 300px;
+
+  .card {
+    width: 260px;
+    height: 300px;
     transform: translateY(-10px);
   }
 
@@ -366,8 +378,7 @@ html {
     padding: 20px;
   }
   .stats {
-    position: absolute;
-    right: -10px;
-   
+    position: relative;
+    left: 15vw;
   }
 }
