@@ -50,6 +50,9 @@ nav {
 .logo {
   margin: 10px;
 }
+.nav_links{
+  display: flex;
+}
 
 .menu {
   display: flex;
@@ -71,6 +74,12 @@ nav {
 
 .menu:hover a {
   opacity: 0.4;
+}
+
+.menu img{
+  width: 25px;
+  height: 25px;
+  scale: 2;
 }
 
 .menu a:hover {
@@ -110,6 +119,8 @@ nav {
     box-shadow: 0 4px 20px hsla(180, 20%, 2%, 0.294);
     padding: 10px;
   }
+
+
 
   .menu a {
     margin-left: 12px;

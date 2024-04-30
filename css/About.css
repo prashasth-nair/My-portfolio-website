@@ -25,7 +25,7 @@ html {
 }
 
 .Section_info {
-  height: 100vh;
+  min-height: 100vh;
 
   /* This sets the height of the element to the full height of the viewport */
 }
@@ -121,13 +121,65 @@ html {
   padding: 0;
 }
 
+.certi_container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+}
+
+.cert_card {
+  width: 300px;
+  height: 400px;
+  /* background: linear-gradient(344deg, rgb(26, 58, 109) 0%, #050415 30%); */
+  box-shadow: 0 4px 20px hsla(234, 91%, 30%, 0.573);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 20px;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+  border: 2px solid #060e1879;
+  z-index: 10;
+
+}
+.cert_head {
+  display: flex;
+}
+.cert_card h2 {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 20px;
+}
+
+.cert_card p {
+  font-size: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+}
+
+.cert_card i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
 .stats {
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
   align-items: end;
 
-  margin: 0 auto;
+  margin-top: 30px;
   width: 64vw;
 }
 
@@ -210,7 +262,7 @@ html {
 
 .heading {
   font-family: "Orbitron", sans-serif;
-  font-size: 6vw;
+  font-size: 4.5vw;
   color: white;
   text-shadow: 5px 5px 0 #000;
   padding: 20px;
@@ -333,6 +385,13 @@ html {
   .heading {
     font-size: 8vw;
   }
+
+  .certi_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .info_container {
     flex-direction: column;
     align-items: center;
@@ -378,7 +437,10 @@ html {
     padding: 20px;
   }
   .stats {
-    position: relative;
-    left: 15vw;
+    /* position: relative;
+    left: 15vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
