@@ -12,9 +12,26 @@
 body {
   margin-top: 100px;
   background-color: #050415;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #001f3e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #172a45;
+}
 /*  */
 
 .input-field {
@@ -105,15 +122,15 @@ textarea::-webkit-scrollbar {
 .contact-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   position: relative;
-  max-width: 1000px;
+  max-width: 950px;
 
-  /* width: 470px; */
   border-radius: 10px;
   padding: 25px 25px 30px;
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 19px rgba(55, 0, 255, 0.3);
 }
 
 .send-button {
@@ -201,11 +218,12 @@ textarea::-webkit-scrollbar {
 /* Social Media Icons */
 .social-menu {
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  user-select: none;
 }
 
 .social-menu li a {
@@ -250,6 +268,7 @@ textarea::-webkit-scrollbar {
 
 .social-menu li:hover a {
   color:#de5d54;
+  
 }
 
 hr {
@@ -270,20 +289,37 @@ hr {
 }
 /* CSS for the dialog box */
 #dialog-box {
-  width: 300px;
+  width: 400px;
   padding: 20px;
-  background-color: #9590e9;
-  border: 1px solid #81184d;
+  background-color: #050415;
+  box-shadow: 10px 10px 19px rgba(55, 0, 255, 0.3);
   border-radius: 5px;
   text-align: center;
   margin: 100px auto;
   font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+#dialog-box i {
+  color: #e8e5fa;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+#dialog-box p {
+  margin: 20px;
+}
+
+/* blur background of dialog box */
+#dialog-box::backdrop {
+  backdrop-filter: blur(5px);
 }
 
 /* CSS for the success message */
 .success-message {
   color: #4caf50;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -312,8 +348,10 @@ hr {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 20vw;
-    width: 100%;
+    max-width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
   }
 
   .direct-contact-container,
@@ -341,10 +379,14 @@ hr {
 }
 
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .contact-form {
     display: flex;
     width: 100%;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 

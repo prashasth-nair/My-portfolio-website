@@ -22,6 +22,10 @@ textarea.addEventListener("keyup", (e) => {
   textarea.style.height = `${scHeight}px`;
 });
 
+document.getElementById("close_button").addEventListener("click", () => {
+  email_success_dialog.close();
+});
+
 document.querySelector("#contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
   e.target.elements.name.value = "";
