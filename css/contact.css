@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap");
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin-top: 100px;
+  background-color: #050415;
+  /* padding-bottom: 100px; */
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #001f3e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #172a45;
+}
+/*  */
+
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  width: 435px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  margin-top: 15px;
+  border: 2px solid #9590e9;
+  background: transparent;
+  color: #e8e5fa;
+  outline: none;
+}
+
+.input-field label {
+  position: absolute;
+  top: 60%;
+  left: 15px;
+  transform: translateY(-50%);
+  color:#e8e5fa;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border: 2px solid #de5d54;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: 15px;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #050415;
+}
+
+.contact-wrapper textarea {
+  width: 435px;
+  resize: none;
+  height: 59px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  background: none;
+  color: #e8e5fa;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 330px;
+  border: 2px solid #9590e9;
+}
+
+textarea::placeholder {
+  color: #e8e5fa;
+}
+
+textarea:is(:focus, :valid) {
+  padding: 14px;
+  border: 2px solid #de5d54;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  */
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 50px "Oswald", sans-serif;
+  color: #e8e5fa;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 950px;
+
+  border-radius: 10px;
+  padding: 25px 25px 30px;
+  box-shadow: 10px 10px 19px rgba(55, 0, 255, 0.3);
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 36px;
+  width: 435px;
+  overflow: hidden;
+  vertical-align: middle;
+  align-items: center;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#paper-plane {
+  margin-top: 7px;
+}
+
+.send-text {
+  display: block;
+  margin-top: 15px;
+  font: 700 14px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+
+  color: #e8e5fa;
+}
+.list-icons {
+  padding-left: 30px;
+}
+.contact-text {
+  font: 300 18px "Lato", sans-serif;
+  letter-spacing: 1.4px;
+  color: #e8e5fa;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #e8e5fa;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #e8e5fa;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-menu {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+.social-menu li a {
+  color: #e8e5fa;
+}
+
+.social-menu li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #e8e5fa;
+  background-color: #050415;
+  border: 2px solid #e8e5fa;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-menu li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-menu li:hover {
+  background-color: #e8e5fa;
+}
+
+.social-menu li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-menu li:hover a {
+  color:#de5d54;
+  
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.support {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.support h3 {
+  color: #e8e5fa;
+  font: 20px "Oswald", sans-serif;
+}
+.support iframe {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+/* CSS for the dialog box */
+#dialog-box {
+  width: 400px;
+  padding: 20px;
+  background-color: #050415;
+  box-shadow: 10px 10px 19px rgba(55, 0, 255, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  margin: 100px auto;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+#dialog-box i {
+  color: #e8e5fa;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+#dialog-box p {
+  margin: 20px;
+}
+
+/* blur background of dialog box */
+#dialog-box::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+/* CSS for the success message */
+.success-message {
+  color: #4caf50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#success-content {
+  color:#e8e5fa;
+}
+
+/* CSS for the OK button */
+#ok-button {
+  background-color: #9590e9;
+  color: #e8e5fa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support h3 {
+  margin-top: 20px;
+}
+
+/* Begin Media Queries*/
+
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 100px;
+    max-width: 300px;
+    margin-left: 0px;
+  }
+
+  .social-menu li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+
+  .social-menu li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .contact-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .input-field input {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .input-field label {
+    font-size: 17px;
+    top: 60%;
+  }
+
+  .direct-contact-container {
+    margin-top: 100px;
+    max-width: 300px;
+    margin-left: 0px;
+  }
+
+  .contact-wrapper textarea {
+    width: 300px;
+  }
+
+  .send-button {
+    width: 300px;
+  }
+  .alt-send-button {
+    width: 300px;
+  }
+
+  .social-menu {
+    left: 0;
+  }
+
+  .social-menu li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+
+  .social-menu li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}

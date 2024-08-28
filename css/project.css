@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap");
+*:focus {
+  outline: none;
+}
+body {
+  
+  padding: 0;
+  margin-top: 100px;
+  background-color: #050415;
+  padding-bottom: 100px;
+}
+#blob {
+  height: 350px;
+  width: 300px;
+  position: fixed;
+  translate: -50% -50%;
+  border-radius: 50%;
+  z-index: -100;
+  background: linear-gradient(to left, #191432  , #111f7b);
+  animation: rotate 10s infinite linear;
+  filter: blur(30px);
+}
+
+.project_details {
+  padding: 2vw;
+  animation: fadeIn 2s forwards;
+  animation-play-state: paused;
+}
+
+#project_head {
+  color: aliceblue;
+  position: relative;
+  display: flex;
+
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: fit-content;
+  white-space: nowrap;
+  font-size: 32px;
+}
+
+.project_card {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.project_img {
+  width: 500px;
+  max-height: 500px;
+
+  border-right: 4px solid #ff6347;
+  border-bottom: 4px solid #ff6347;
+  padding-right: 6px;
+  padding-bottom: 6px;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeUp 1s forwards;
+  animation-play-state: paused;
+}
+
+.project_title {
+  font-size: 36px;
+  color: aliceblue;
+}
+
+.project_disc {
+  margin-top: 20px;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  color: white;
+  text-anchor: middle;
+  font-size: 18px;
+  box-shadow: 0 10px 50px hsla(238, 100%, 18%, 0.755);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  text-align:justify;
+}
+
+.project_langs ul li {
+  display: inline-block;
+  /* display each list item as an inline block */
+  padding: 10px;
+  /* add some padding for each list item */
+  color: #ff6347;
+}
+
+.project_langs ul {
+  list-style: none;
+  /* remove bullet points */
+  display: flex;
+  /* make the list display horizontally */
+  flex-wrap: wrap;
+  /* wrap list items to new line if needed */
+  margin: 0;
+  /* remove margin */
+  padding: 0;
+  /* remove padding */
+}
+
+.project_btn {
+  float: right;
+  font-size: 25px;
+}
+
+.github-icon {
+  color: white;
+}
+
+/* Shine */
+.project_image_div figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.project_image_div figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #001f3e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #172a45;
+}
+
+/* animation */
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  #blob{
+    display: none;
+  }
+  .project_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .project_image_div {
+    display: flex;
+    width: 100%;
+    height: auto;
+    place-items: center;
+  }
+  .project_details {
+    display: flex;
+    flex-direction: column;
+  }
+  .project_image_div figure img {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
